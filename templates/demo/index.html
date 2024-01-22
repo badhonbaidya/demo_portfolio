@@ -11,19 +11,19 @@
         <title>First Portfolio Bootstrap 5 Theme</title>
 
         <!-- CSS FILES -->
-        <link rel="{% static 'preconnect' %}" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         
-        <link rel="{% static 'preconnect' %}" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-        <link href="{% static 'admin/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-        <link href="{% static 'admin/css/bootstrap-icons.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
 
-        <link href="{% static 'admin/css/magnific-popup.css' %}" rel="stylesheet">
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
 
-        <link href="{% static 'admin/css/templatemo-first-portfolio-style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/templatemo-first-portfolio-style.css' %}" rel="stylesheet">
         
 <!--
 
@@ -101,24 +101,20 @@ https://templatemo.com/tm-578-first-portfolio
                         <div class="col-lg-7 col-12">
                             <div class="hero-text">
                                 <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                    <img src="{% static 'assets/images/happy-bearded-young-man.jpg' %}" class="avatar-image avatar-image-large img-fluid" alt="">
+                                    <img src="{% static 'images/happy-bearded-young-man.jpg' %}" class="avatar-image avatar-image-large img-fluid" alt="">
 
                                     <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
                                 </div>
 
-                                <h2 class="mb-4">I,m available for freelance work.</h2>
+                                <h2 class="mb-4">I’m available for freelance work.</h2>
                                 <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-12 position-relative">
                             <div class="hero-image-wrap"></div>
-                            
                             <img src="{% static 'images/portrait-happy-excited-man-holding-laptop-computer.png' %}" class="hero-image img-fluid" alt="">
                         </div>
-                        <img src="{% static 'images/
-                        portrait-happy-excited-man-holding-laptop-computer.png' %}"
-                        class="hero-image-fluid" alt="">
 
                     </div>
                 </div>
@@ -141,7 +137,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
                                     <h2 class="text-white me-4 mb-0">My Story</h2>
 
-                                    <img src="images/happy-bearded-young-man.jpg" class="avatar-image img-fluid" alt="">
+                                    <img src="{% static 'images/happy-bearded-young-man.jpg' %}" class="avatar-image img-fluid" alt="">
                                 </div>
 
                                 <h3 class="pt-2 mb-3">a little bit about Joshua</h3>
@@ -177,14 +173,14 @@ https://templatemo.com/tm-578-first-portfolio
                                         <span>Aug 12, 1986</span>
                                     </p>
 
-                                 <p>
+                                    <p>
                                         <span class="profile-small-title">Phone</span> 
-                                    <span><a href="tel: 305-240-9671">120-240-9600</a></span>
+                                         <span><a href="tel: 305-240-9671">120-240-9600</a></span>
                                     </p>
 
                                     <p>
                                         <span class="profile-small-title">Email</span> 
-                                   <span><a href="mailto:hello@josh.design">hello@josh.design</a></span>
+                                        <span><a href="mailto:hello@josh.design">hello@josh.design</a></span>
                                     </p>
                                 </div>
                             </div>
@@ -234,7 +230,7 @@ https://templatemo.com/tm-578-first-portfolio
                         </div>
 
                         <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                            <img src="{% static 'assets/images/clients/cachet.svg' %}" class="clients-image img-fluid" alt="">
+                            <img src="{% static 'images/clients/cachet.svg' %}" class="clients-image img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-2 col-4 clients-item-height">
@@ -264,7 +260,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                         <div class="col-lg-10 col-12 mx-auto">
                             <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt="">
+                                <img src="{% static 'images/handshake-man-woman-after-signing-business-contract-closeup.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                 <h2 class="text-white ms-4 mb-0">Services</h2>
                             </div>
@@ -366,7 +362,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                         <div class="col-lg-8 col-md-8 col-12 ms-auto">
                             <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-                                <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
+                                <img src="{% static 'images/white-desk-work-study-aesthetics.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                 <h2 class="text-white ms-4 mb-0">Projects</h2>
                             </div>
@@ -383,7 +379,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 </div>
 
                                 <a href="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                    <img src="{% static 'images/projects/nikhil-KO4io-eCAXA-unsplash.jpg' %}" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
@@ -397,7 +393,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 </div>
 
                                 <a href="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                    <img src="{% static 'images/projects/the-5th-IQYR7N67dhM-unsplash.jpg' %}" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
@@ -411,7 +407,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 </div>
 
                                 <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                    <img src="{% static 'images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg' %}" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
@@ -426,7 +422,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                             <div class="col-lg-6 col-md-8 col-12">
                                 <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                    <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt="">
+                                    <img src="{% static 'images/aerial-view-man-using-computer-laptop-wooden-table.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                     <h2 class="text-white ms-4 mb-0">Say Hi</h2>
                                 </div>
@@ -462,7 +458,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                                     <strong class="site-footer-title d-block mt-4 mb-3">Start a project</strong>
 
-                                    <p class="mb-0">I,m available for freelance projects</p>
+                                    <p class="mb-0">I’m available for freelance projects</p>
                                 </div>
                             </div>
 
@@ -594,15 +590,14 @@ https://templatemo.com/tm-578-first-portfolio
 
                 </div>
             </div>
-        </footer>
         <!-- JAVASCRIPT FILES -->
-        <script src="{% static 'admin/js/jquery.min.js' %}"></script>
-        <script src="{% static 'admin/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'admin/js/jquery.sticky.js' %}"></script>
-        <script src="{% static 'admin/js/click-scroll.js' %}"></script>
-        <script src="{% static 'admin/js/jquery.magnific-popup.min.js' %}"></script>
-        <script src="{% static 'admin/js/magnific-popup-options.js' %}"></script>
-        <script src="{% static 'admin/js/custom.js' %}"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/magnific-popup-options.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
 
     </body>
 </html>
