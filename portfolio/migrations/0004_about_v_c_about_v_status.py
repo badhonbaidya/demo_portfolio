@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='about',
             name='v_c',
-            field=models.CharField(default=1, max_length=5000),
+            field=models.CharField(default=1, max_length=50),
             preserve_default=False,
         ),
         migrations.AddField(

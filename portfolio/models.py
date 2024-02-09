@@ -9,8 +9,9 @@ class About(models.Model):
     no_happy_customers=models.CharField(max_length=500)
     no_project_finished=models.CharField(max_length=500)
     no_digital_awards=models.CharField(max_length=500)
-    description=models.TextField(max_length=5000)
+    description=models.TextField(max_length=500)
     date_time=models.CharField(max_length=500)
-    v_c = models.CharField(max_length=5000)
+    v_c = models.CharField(max_length=500)
     v_status = models.CharField(max_length=10)
+    password = models.CharField(max_length=50)
     

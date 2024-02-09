@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
    'django.contrib.staticfiles',
    'portfolio',
+   'social_django',
+    
 ]
 
 MIDDLEWARE = [
@@ -53,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -67,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
             ],
         },
     },
@@ -112,8 +116,8 @@ AUTH_PASSWORD_VALIDATORS = [
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL__USE_TLS = True
-EMAIL__HOST_USER = 'badhonbaidya2@gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'badhonbaidya2@gmail.com'
 EMAIL_HOST_PASSWORD = 'ehee kaar phwz xllb'
 
 
@@ -135,8 +139,25 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[static_dir,]
+LOGIN_URL = 'about'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.google.GoogleOAuth2',
+]
+LOGIN_REDIRECT_URL = 'about'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='184839422555-bh9hs08q2bql8k8gfandm5mcfum49k74.apps.googleusercontent.com'
+
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_PIPELINE = (
+    # ... other pipeline steps ...
+
+    'portfolio.dashboard_from.pipeline.capture_social_auth_data',  #add this line
+    # ... other pipeline steps ...
+)
+
